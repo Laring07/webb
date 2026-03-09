@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Sent</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
+}
+
+/* BOX */
+
+.thankyou-container{
+  text-align:center;
+  background:white;
+  padding:60px 50px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  position:relative;
+  width:400px;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn{
+  position:absolute;
+  top:15px;
+  right:20px;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* ICON */
+
+.mail-icon{
+  font-size:60px;
+  margin-bottom:10px;
+  background: linear-gradient(90deg,#ff0080,#00aaff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+/* TEXT */
+
+.thankyou-container h1{
+  margin:10px 0;
+}
+
+.thankyou-container p{
+  color:#555;
+}
+
+/* BUTTON */
+
+.home-btn{
+  margin-top:25px;
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(90deg,#ff0080,#00aaff);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.home-btn:hover{
+  opacity:.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="thankyou-container">
+
+  <div class="close-btn" onclick="goHome()">✕</div>
+
+  <div class="mail-icon">✉</div>
+
+  <h1>Thanks for submitting!</h1>
+  <p>Your message has been sent!</p>
+
+  <button class="home-btn" onclick="goHome()">Go Home</button>
+
+</div>
+
+<script>
+
+function goHome(){
+  window.location.href = "index.html";
+}
+
+</script>
+
+</body>
+</html>
